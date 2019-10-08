@@ -2,17 +2,20 @@
 
 # Form implementation generated from reading ui file 'C:\Users\alexa\Pictures\Proyecto Grado\Interfaces\login.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.1
+# Created by: PyQt5 GUI code generator 5.13.1
 #
 # WARNING! All changes made in this file will be lost!
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QMainWindow
+
+from GUI.ventanaPrincipal import VentanaPrincipal
+
 
 class Login(QMainWindow):
 
-    def setupUi(self, Form):
+    def setup_ui(self, Form):
         Form.setObjectName("Form")
         Form.resize(376, 380)
         Form.setStyleSheet("background-color: rgb(3, 169, 244);")
@@ -27,19 +30,20 @@ class Login(QMainWindow):
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.textEdit = QtWidgets.QTextEdit(self.frame)
-        self.textEdit.setGeometry(QtCore.QRect(30, 40, 211, 31))
-        self.textEdit.setStyleSheet("color: rgb(0, 0, 0);\n"
+        self.textUsuario = QtWidgets.QTextEdit(self.frame)
+        self.textUsuario.setGeometry(QtCore.QRect(30, 40, 211, 31))
+        self.textUsuario.setStyleSheet("color: rgb(0, 0, 0);\n"
 "background-color: rgb(189, 189, 189);\n"
 "font: 75 11pt \"Century Gothic\";")
-        self.textEdit.setObjectName("textEdit")
-        self.textEdit_2 = QtWidgets.QTextEdit(self.frame)
-        self.textEdit_2.setGeometry(QtCore.QRect(30, 110, 211, 31))
-        self.textEdit_2.setStyleSheet("color: rgb(0, 51, 51);\n"
+        self.textUsuario.setObjectName("textEdit")
+        self.textUsuario.setPlaceholderText('Ingrese nombre de usuario')
+        self.textContrasena = QtWidgets.QTextEdit(self.frame)
+        self.textContrasena.setGeometry(QtCore.QRect(30, 110, 211, 31))
+        self.textContrasena.setStyleSheet("color: rgb(0, 51, 51);\n"
 "background-color: rgb(189, 189, 189);\n"
 "font: 75 11pt \"Century Gothic\";\n"
 "")
-        self.textEdit_2.setObjectName("textEdit_2")
+        self.textContrasena.setObjectName("textEdit_2")
         self.btnAgregar = QtWidgets.QPushButton(self.frame)
         self.btnAgregar.setGeometry(QtCore.QRect(30, 170, 211, 41))
         self.btnAgregar.setStyleSheet("font:75 14pt \"Century Gothic\";\n"
@@ -56,7 +60,49 @@ class Login(QMainWindow):
         self.label_3.setObjectName("label_3")
 
         self.retranslateUi(Form)
+        self.btnAgregar.clicked.connect(self.ingresar)
         QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def ingresar(self):
+        usuario = self.textUsuario.toPlainText()
+        contra = self.textContrasena.toPlainText()
+        if len(usuario) == 0 or len(contra) == 0:
+            self.mostrar_mensaje("Alerta", "¡Campos vacíos, verifique haber ingresado su usuario y contraseña!", "",
+                                     QMessageBox.Warning, False)
+        else:
+            if usuario == 'admin' and contra == '12345':
+
+                self.ventana = QtWidgets.QMainWindow()
+                self.ui = VentanaPrincipal()
+                print("6")
+                self.ui.setup_ui(self.ventana)
+                print("7")
+                self.ventana.show()
+
+            else:
+                self.mostrar_mensaje("Alerta", "El usuario o la contraseña son incorrectos", "",
+                                         QMessageBox.Warning,
+                                         False)
+
+    def mostrar_mensaje(self, titulo: str, texto: str, texto_informativo: str, tipo_mensaje: QMessageBox, estado: bool):
+
+        self.message_box = QMessageBox()
+        self.message_box.setWindowTitle(titulo)
+        self.message_box.setText(texto)
+
+        if len(texto_informativo) > 0:
+            self.message_box.setInformativeText(texto_informativo)
+
+        if estado:
+            btn_si = self.message_box.addButton('Si', QMessageBox.ActionRole)
+            btn_no = self.message_box.addButton('No', QMessageBox.ActionRole)
+            self.message_box.setDefaultButton(btn_si, btn_no)
+        else:
+            btn_aceptar = self.message_box.addButton('Aceptar', QMessageBox.ActionRole)
+            self.message_box.setDefaultButton(btn_aceptar)
+        if tipo_mensaje is not None:
+            self.message_box.setIcon(tipo_mensaje)
+            self.message_box.exec_()
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
