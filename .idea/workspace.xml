@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b389f01d-0ad2-460a-8403-da2559547829" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/DB/Conexion_DB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/SoftwareHorarios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SoftwareHorarios.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/GUI/registroDocentes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fond/uq2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uq2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/ventanaPrincipal.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/ventanaPrincipal.py" afterDir="false" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +55,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI/Main.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="153">
               <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+=======
+            <state relative-caret-position="85">
+              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -61,10 +75,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/Login.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="578">
               <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+=======
+            <state relative-caret-position="103">
+              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI/registroDocentes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
               <folding>
-                <element signature="e#246#281#0" expanded="true" />
+                <element signature="e#256#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI/2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="e#245#287#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +131,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/ventanaPrincipal.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="442">
               <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+=======
+            <state relative-caret-position="351">
+              <caret line="156" column="47" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
+              <folding>
+                <element signature="e#257#299#0" expanded="true" />
+              </folding>
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
             </state>
           </provider>
         </entry>
@@ -117,9 +165,14 @@
         <option value="$PROJECT_DIR$/Templates/Login.py" />
         <option value="$PROJECT_DIR$/UI/Main.py" />
         <option value="$PROJECT_DIR$/GUI/Main.py" />
-        <option value="$PROJECT_DIR$/GUI/Login.py" />
+        <option value="$PROJECT_DIR$/GUI/registroDocentes.py" />
         <option value="$PROJECT_DIR$/GUI/ventanaPrincipal.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/DB/Conexion_DB.py" />
+=======
+        <option value="$PROJECT_DIR$/GUI/login1.py" />
+        <option value="$PROJECT_DIR$/GUI/Login.py" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
       </list>
     </option>
   </component>
@@ -143,9 +196,25 @@
               <item name="Software_Horarios_UQ" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="Software_Horarios_UQ" type="b2602c69:ProjectViewProjectNode" />
               <item name="Software_Horarios_UQ" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="SoftwareHorarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareHorarios" type="462c0819:PsiDirectoryNode" />
+              <item name="fond" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareHorarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareHorarios" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SoftwareHorarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SoftwareHorarios" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -157,6 +226,13 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexa\Pictures\Proyecto Grado\SoftwareHorarios" />
+      <recent name="C:\Users\alexa\Pictures\Proyecto Grado\SoftwareHorarios\fond" />
+      <recent name="C:\Users\alexa\Pictures\Proyecto Grado\SoftwareHorarios\GUI" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,12 +340,21 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30819672" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49884528" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.5011547" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4140753" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -289,29 +374,64 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GUI/Main.py">
+    <entry file="file://$PROJECT_DIR$/GUI/registroDocentes.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="153">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+=======
+        <state relative-caret-position="187">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#256#298#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI/ventanaPrincipal.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="442">
           <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+=======
+        <state relative-caret-position="351">
+          <caret line="156" column="47" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
+          <folding>
+            <element signature="e#257#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="e#245#287#0" expanded="true" />
+          </folding>
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI/Login.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="578">
           <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+=======
+        <state relative-caret-position="103">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+>>>>>>> e50461fe514e4fa262a6082d2c2f465a9dd65fc7
           <folding>
-            <element signature="e#246#281#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

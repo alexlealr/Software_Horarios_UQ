@@ -8,7 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from GUI.registroDocentes import RegistroDocentes
 
 class VentanaPrincipal(QtWidgets.QMainWindow):
 
@@ -109,13 +109,13 @@ class VentanaPrincipal(QtWidgets.QMainWindow):
         font.setFamily("Segoe Print")
         self.actionVer_fechas_alternas.setFont(font)
         self.actionVer_fechas_alternas.setObjectName("actionVer_fechas_alternas")
-        self.actionActualizar_Docente = QtWidgets.QAction(form)
+        self.actionRegistrar_Docente = QtWidgets.QAction(form)
         font = QtGui.QFont()
         font.setFamily("Century Gothic")
         font.setBold(True)
         font.setWeight(75)
-        self.actionActualizar_Docente.setFont(font)
-        self.actionActualizar_Docente.setObjectName("actionActualizar_Docente")
+        self.actionRegistrar_Docente.setFont(font)
+        self.actionRegistrar_Docente.setObjectName("actionRegistrar_Docente")
         self.actionEliminar_docente = QtWidgets.QAction(form)
         font = QtGui.QFont()
         font.setFamily("Century Gothic")
@@ -143,7 +143,7 @@ class VentanaPrincipal(QtWidgets.QMainWindow):
         self.menuAsignaturas.addAction(self.actionRegistrar_Asignaturas_2)
         self.menuAsignaturas.addAction(self.actionModificar_Asignaturas)
         self.menuAsignaturas.addAction(self.actionEliminar_Asignaturas)
-        self.menuDocentes.addAction(self.actionActualizar_Docente)
+        self.menuDocentes.addAction(self.actionRegistrar_Docente)
         self.menuDocentes.addAction(self.actionEliminar_docente)
         self.menuDocentes.addAction(self.actionEliminar_docente_2)
         self.menuFechas.addSeparator()
@@ -154,7 +154,14 @@ class VentanaPrincipal(QtWidgets.QMainWindow):
         self.menubar.addAction(self.menuOpciones.menuAction())
 
         self.retranslateUi(form)
+        self.actionRegistrar_Docente.triggered.connect(self.ventana_registro_docente)
         QtCore.QMetaObject.connectSlotsByName(form)
+
+    def ventana_registro_docente(self):
+            self.ventana = QtWidgets.QMainWindow()
+            self.ui = RegistroDocentes()
+            self.ui.setup_ui(self.ventana)
+            self.ventana.show()
 
     def retranslateUi(self, form):
         _translate = QtCore.QCoreApplication.translate
@@ -173,7 +180,7 @@ class VentanaPrincipal(QtWidgets.QMainWindow):
         self.actionModificar_Asignaturas.setText(_translate("Form", "Modificar asignaturas"))
         self.actionEliminar_Asignaturas.setText(_translate("Form", "Eliminar asignaturas"))
         self.actionVer_fechas_alternas.setText(_translate("Form", "Ver fechas alternas"))
-        self.actionActualizar_Docente.setText(_translate("Form", "Registrar docente"))
+        self.actionRegistrar_Docente.setText(_translate("Form", "Registrar docente"))
         self.actionEliminar_docente.setText(_translate("Form", "Actualizar docente"))
         self.actionEliminar_docente_2.setText(_translate("Form", "Eliminar docente"))
         self.actionRegistrar_fechas.setText(_translate("Form", "Registrar fechas"))
