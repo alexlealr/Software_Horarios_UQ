@@ -26,7 +26,7 @@ class Login(object):
         self.label_5.setGeometry(QtCore.QRect(0, -10, 831, 611))
         self.label_5.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_5.setText("")
-        self.label_5.setPixmap(QtGui.QPixmap(r"/uq2.jpeg"))
+        self.label_5.setPixmap(QtGui.QPixmap("/uq2.jpeg"))
         self.label_5.setScaledContents(True)
         self.label_5.setObjectName("label_5")
         self.label_6 = QtWidgets.QLabel(Form)
@@ -121,7 +121,7 @@ class Login(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Login"))
-        Form.setToolTip(_translate("Form", "<html><head/><body><p><img src=\":/fond/uq2.jpeg\"/></p></body></html>"))
+        Form.setToolTip(_translate("Form", "<html><head/><body><p><img src=\":/uq2.jpeg\"/></p></body></html>"))
         self.label_4.setText(_translate("Form", "TextLabel"))
         self.label_2.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Nombre de usuario:</span></p></body></html>"))
         self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Contraseña:</span></p></body></html>"))
