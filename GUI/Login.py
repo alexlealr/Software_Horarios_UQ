@@ -12,6 +12,7 @@ from GUI.ventanaPrincipal import VentanaPrincipal
 from PyQt5.QtWidgets import QMessageBox, QMainWindow, QApplication
 
 
+
 class Login(object):
 
     def setup_ui(self, Form):
@@ -89,11 +90,8 @@ class Login(object):
             self.mostrarMensaje("Alerta", "Ingrese usuario y/o contraseña", "", QMessageBox.Warning, False)
         else:
             if usuario == 'admin' and contra == '12345':
-                print('alex')
                 self.ventana = QtWidgets.QMainWindow()
-                print("aksas")
                 self.ui = VentanaPrincipal()
-                print("3232323")
                 self.ui.setup_ui(self.ventana)
                 self.ventana.show()
             else:

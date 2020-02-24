@@ -10,8 +10,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+class RegistroAsignaturas(object):
+    def setup_ui(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(594, 575)
         MainWindow.setStyleSheet("background-color: rgb(3, 169, 244);")
