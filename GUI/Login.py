@@ -5,10 +5,11 @@
 # Created by: PyQt5 UI code generator 5.13.1
 #
 # WARNING! All changes made in this file will be lost!
-
+from builtins import print
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from GUI.ventanaPrincipal import VentanaPrincipal
+from GUI.ventanaPrincipal import Principal_home
+from GUI.registroFechas import Registro_fechas
 from PyQt5.QtWidgets import QMessageBox, QMainWindow, QApplication
 
 
@@ -85,14 +86,13 @@ class Login(object):
         usuario = self.txtUsuario.toPlainText()
         print(usuario)
         contra = self.txtContra.toPlainText()
-        print("añex")
         if len(usuario) == 0 | len(contra) == 0:
             self.mostrarMensaje("Alerta", "Ingrese usuario y/o contraseña", "", QMessageBox.Warning, False)
         else:
             if usuario == 'admin' and contra == '12345':
                 self.ventana = QtWidgets.QMainWindow()
-                self.ui = VentanaPrincipal()
-                self.ui.setup_ui(self.ventana)
+                self.ui = Principal_home()
+                self.ui.setupUi(self.ventana)
                 self.ventana.show()
             else:
                 self.mostrarMensaje("Alerta", "El usuario o la contraseña son incorrectos", "", QMessageBox.Warning,

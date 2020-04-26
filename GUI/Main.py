@@ -5,8 +5,8 @@ from GUI.Login import Login
 
 if __name__ == "__main__":
     app = QApplication([])
-    hola = QMainWindow()
+    index = QMainWindow()
     main_window = Login()
-    main_window.setup_ui(hola)
-    hola.show()
+    main_window.setup_ui(index)
+    index.show()
     sys.exit(app.exec_())
